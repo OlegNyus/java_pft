@@ -3,10 +3,11 @@ package ru.stqa.pft.sandbox;
 public class MyFirstProgram {
 
   public static void main(String[] args) {
-    System.out.print("Hello, " + "world !  ");
+    String somebody = "world";
+    System.out.print("Hello, " + somebody + " !  ");
 
-    int l = 8;
-    int s = l * l;
+    double l = 8.0;
+    double s = l * l;
     System.out.println("Square with site of " + l + " = " + s);
 
   }
