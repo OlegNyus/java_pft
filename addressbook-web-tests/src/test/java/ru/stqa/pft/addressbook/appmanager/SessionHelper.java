@@ -3,16 +3,13 @@ package ru.stqa.pft.addressbook.appmanager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class NavigationHelper {
+public class SessionHelper {
   private FirefoxDriver wd;
-
-  public NavigationHelper(FirefoxDriver wd) {
+  public SessionHelper(FirefoxDriver wd) {
     this.wd = wd;
+
   }
 
-  public void gotoGroupPage() {
-      wd.findElement(By.linkText("groups")).click();
-  }
   public void  login(String username, String password) {
     wd.findElement(By.name("user")).click();
     wd.findElement(By.name("user")).clear();
