@@ -12,7 +12,8 @@ public class GroupHelper extends HelperBase {
   }
 
   public void returnToGroupPage() {
-      wd.findElementByCssSelector(".msgbox > i:nth-child(2) > a:nth-child(1)").click();
+      //wd.findElementByCssSelector(".msgbox > i:nth-child(2) > a:nth-child(1)").click();
+    click(By.cssSelector(".msgbox > i:nth-child(2) > a:nth-child(1)"));
   }
 
   public void submitGroupCreation() {
