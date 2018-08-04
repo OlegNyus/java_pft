@@ -16,6 +16,7 @@ public class ApplicationManager {
   private NavigationHelper navigationHelper;
   private GroupHelper groupHelper;
   private String browser;
+  private ContactHelper contactHelper;
 
   public ApplicationManager(String browser) {
     this.browser = browser;
@@ -42,12 +43,14 @@ public class ApplicationManager {
     navigationHelper = new NavigationHelper(wd);
     sessionHelper = new SessionHelper(wd);
     sessionHelper.login("admin", "secret");
+    contactHelper = new ContactHelper(wd);
   }
 
 
   public void stop() {
     //wd.quit();
   }
+  public ContactHelper getContactHelper(){ return contactHelper; }
 
   public GroupHelper getGroupHelper() {
     return groupHelper;
