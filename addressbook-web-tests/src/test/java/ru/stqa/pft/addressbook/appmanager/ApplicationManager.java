@@ -3,7 +3,6 @@ package ru.stqa.pft.addressbook.appmanager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.BrowserType;
 import org.openqa.selenium.safari.SafariDriver;
 
@@ -32,7 +31,7 @@ public class ApplicationManager {
     else if (browser.equals(BrowserType.SAFARI)) {
       wd = new SafariDriver();
 
-      //Add following to ise IE browser
+      //Add following to use IE browser
       //else if (browser == BrowserType.IE) {
         // wd = new InternetExplorerDriver();
     }
